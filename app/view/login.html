@@ -1,0 +1,19 @@
+<div class="panel panel-default" style="margin-top: 100px; margin-left: 20%;width: 50%">
+  <div class="panel-heading">Test Auth API</div>
+  <div class="panel-body">
+	  <form>
+	  <div class="form-group" ng-hide="checkLogin()">
+	    <label for="deviceUUID">Enter Device UUID</label>
+	    <input type="deviceUUID" class="form-control" id="deviceUUID" ng-model="deviceUUID" placeholder="Enter Device UUID" required>
+	  </div>
+	 
+	  <div class="form-group" ng-show="checkLogin()">
+	    <span id="message">You are LogedIn!!!</span>
+	  </div>
+	 
+	  <button type="submit" ng-hide="checkLogin()" id="loginBtn" ng-click="login()" class="btn btn-primary">Login!</button>
+	  <button type="submit" ng-click="validate()" id="validateBtn" class="btn btn-success" ng-show="checkLogin()">Validate!</button>
+	  <button type="submit" ng-click="logout()" id="logoutBtn" class="btn btn-danger" ng-show="checkLogin()">Logout!</button>
+	</form>
+  </div>
+</div>

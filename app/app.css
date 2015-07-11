@@ -1,0 +1,15 @@
+.page-header{
+	
+	margin: 0px;
+	background-color:black;
+    height: 50px;
+}
+
+body{
+	background-color: white;
+}
+.title{
+	margin: 0px;
+	padding-top: 10px;
+	color: white;
+}

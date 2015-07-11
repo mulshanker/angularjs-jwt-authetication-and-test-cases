@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="freelanceDiaryApp">
+<head>
+<title ng-cloak ng-bind="title">FreelanceDiary front-end test task</title>
+<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="app.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="page-header">
+		<h4 class="title">FreelanceDiary front-end test task</h4>
+	</div>
+	<div ng-view></div>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+	<script src="app.js"></script>
+	<script src="common/Config.js"></script>
+	<script src="service/AuthenticationHandlerService.js"></script>
+	<script src="controller/AuthenticationHandlerController.js"></script>
+	
+
+
+
+</body>
+</html>
